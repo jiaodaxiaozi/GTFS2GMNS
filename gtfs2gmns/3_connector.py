@@ -22,7 +22,7 @@ def createConnector(from_node_id, to_node_id):
     length = LLs2Dist(from_node_id_x,from_node_id_y,to_node_id_x,to_node_id_y)
     geometry = 'LINESTRING (' + str(from_node_id_x)+' '+str(from_node_id_y)+', '+str(to_node_id_x)+' '+str(to_node_id_y)+')'
         
-    link = [from_node_id,to_node_id,length,geometry]
+    link = [from_node_id, to_node_id, length, geometry]
     return link
 
 print('reading gmns data...')
